@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour {
 	private Animator anim;
 	private Rigidbody playerRigidBody;
 	private int floorMask;
-	private float camRayLength = 100f;
+	//private float camRayLength = 100f; // No idea why it is used... i'll see later
 
 	void Awake () {
 		floorMask = LayerMask.GetMask ("Floor");

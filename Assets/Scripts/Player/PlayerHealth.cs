@@ -61,6 +61,10 @@ public class PlayerHealth : MonoBehaviour
         {
             Death ();
         }
+
+		if (currentHealth > 100) {
+			currentHealth = 100;
+		}
     }
 
 
