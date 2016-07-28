@@ -35,8 +35,8 @@ public class ItemManager : MonoBehaviour {
 			Destroy (spawnedObject);
 		}
 
-		int spawnPointIndex = Random.Range (0, spawnPoints.Length - 1);
-		int itemIndex = Random.Range (0, itemsTypes.Length - 1);
+		int spawnPointIndex = Random.Range (0, spawnPoints.Length);
+		int itemIndex = Random.Range (0, itemsTypes.Length);
 
 		spawnedObject = Instantiate (itemContainer, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation) as GameObject;
 		Pickable pickable = spawnedObject.GetComponent<Pickable> ();

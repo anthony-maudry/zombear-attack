@@ -16,6 +16,6 @@ public class HealthItem : AbstractItem {
 	}
 
 	public override Color GetLightColor () {
-		return new Color (1, 0, 0);
+		return new Color (0f, 0.85f, 0.2f);
 	}
 }
